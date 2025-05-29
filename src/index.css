@@ -3,12 +3,11 @@
 @import "tailwindcss";
 
 @theme {
-  --screen-sm: 350px;
-  --screen-md: 760px;
-  --screen-lg: 1024px;
-  --screen-xl: 1280px;
-  --screen-2xl: 1536px;
-  
+  --breakpoint-sm: 350px;
+  --breakpoint-md: 760px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
   --color-brown: #53423e;
   --color-lightBrown: #645550;
   --color-darkBrown: #2c2523;
@@ -33,4 +32,5 @@
 
 body {
   @apply bg-darkBrown
+
 }
