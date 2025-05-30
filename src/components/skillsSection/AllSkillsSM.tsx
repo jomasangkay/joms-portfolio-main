@@ -9,6 +9,8 @@ import { BiLogoSpringBoot } from "react-icons/bi";
 import { SiSelenium } from "react-icons/si";
 import { FaAws } from "react-icons/fa";
 import { SiMysql } from "react-icons/si";
+import { motion } from 'framer-motion';
+import { fadeIn } from "../../framerMotion/variants";
 
 
 const skills = [
@@ -63,11 +65,18 @@ const AllSkillsSM = () => {
   return (
     <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-12 my-12">
         {skills.map((item, index) => {
-            return <div key={index} className="flex flex-col items-center">
+            return <motion.div 
+                variants={fadeIn('up', 0)}
+                initial='hidden'
+                whileInView="show"
+                viewport={{ once: false, amount: 0.7}}
+                key={index} 
+                className="flex flex-col items-center">
+                
                 <item.icon className="text-7xl text-orange" />
                 <p className="text-center mt-4 text-white">{item.skill}</p>
 
-            </div>
+            </motion.div>
         })}
     </div>
   )
