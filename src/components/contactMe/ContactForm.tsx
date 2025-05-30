@@ -15,9 +15,10 @@ const ContactForm = () => {
   const handleMessage = (e:React.ChangeEvent<HTMLTextAreaElement>) => {
     setMessage(e.target.value);
   };
-  const form = useRef('');
+  const form = useRef<HTMLFormElement>(null);
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (!form.current) return;
     emailjs
       .sendForm("service_uz7w0ss", "template_qkqfnyw", form.current, {
         publicKey: "bM5S1HdmkEnOWx6jR",
@@ -58,10 +59,9 @@ const ContactForm = () => {
           onChange={handleEmail}
         />
         <textarea
-          type="text"
           name="message"
-          rows='9'
-          cols="50"
+          rows={9}
+          cols={50}
           placeholder="Message"
           required
           className="rounded-lg bg-lightBrown p-2"

@@ -68,7 +68,7 @@ const AllSkills = () => {
             {skills.map((item, index) => {
                 return (
                 <motion.div
-                variants={fadeIn('up', `0.${index}`)}
+                variants={fadeIn('up', Number(`0.${index}`))}
                 initial='hidden'
                 whileInView="show"
                 viewport={{ once: false, amount: 0}}
