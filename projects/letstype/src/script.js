@@ -1,5 +1,6 @@
 import data from './data.js';
 
+
 function TypingGame(score,stage,speedLvl,pixelIncrement,container){
 
     this.score = score;
@@ -24,6 +25,36 @@ function TypingGame(score,stage,speedLvl,pixelIncrement,container){
         document.getElementById('showKeyword').setAttribute('value', data[randomIndex].words);
     });
 
+    //method to re-setup style container after successfull keyword entered.
+    const setupContainer = ((setup) => {
+        if(setup === "initial") {
+            document.getElementById('input-enter').value = "";
+        document.getElementById('showKeyword').classList.add('dead');
+        document.querySelector('.keyword-1').removeAttribute('id');
+        document.querySelector('.keyword-1').classList.remove('correct');
+        document.querySelector('.keyword-1').classList.remove('incorrect');
+        document.querySelector('.keyword-2').setAttribute('id','showKeyword');
+        document.querySelector('.keyword-2').classList.remove('hide');
+        }
+        
+
+        //setup class changes ang attributes for the next block
+        document.getElementById('input-enter').value = "";
+        document.getElementById('showKeyword').classList.add('dead');
+        document.querySelector('.keyword-2').removeAttribute('id');
+        document.querySelector('.keyword-2').classList.remove('correct');
+        document.querySelector('.keyword-2').classList.remove('incorrect');
+        document.querySelector('.keyword-3').setAttribute('id','showKeyword');
+        document.querySelector('.keyword-3').classList.remove('hide');
+        document.querySelector(this.container).classList.add('move');
+
+        document.getElementById('showKeyword').classList.add('dead');
+        document.querySelector('.keyword-3').classList.remove('correct');
+        document.querySelector('.keyword-3').classList.remove('incorrect');
+        document.querySelector('.keyword-3').removeAttribute('id');
+        document.getElementById('input-enter').setAttribute('readonly',"")
+    });
+
     //method for set interval.
     this.timer = (() => {
            
@@ -43,14 +74,8 @@ function TypingGame(score,stage,speedLvl,pixelIncrement,container){
             //stop interval time
             clearInterval(this.interval);
             
-            //setup class changes ang attributes for the next block
-            document.getElementById('input-enter').value = "";
-            document.getElementById('showKeyword').classList.add('dead');
-            document.querySelector('.keyword-1').removeAttribute('id');
-            document.querySelector('.keyword-1').classList.remove('correct');
-            document.querySelector('.keyword-1').classList.remove('incorrect');
-            document.querySelector('.keyword-2').setAttribute('id','showKeyword');
-            document.querySelector('.keyword-2').classList.remove('hide');
+            //setup class changes and attributes for the next block
+            setupContainer("initial")
 
             document.querySelector(this.container).classList.add('move');
                     

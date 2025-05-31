@@ -15,7 +15,7 @@ const NavBarMain = () => {
         <div className="flex justify-between w-full max-w-[1200px] mx-auto bg-black items-center p-6 rounded-r-full rounded-l-full border-[0.5px] border-orange/40">
         <NavBarLogo />
         <div className={`${menuOpen ? 'sm:block' : 'sm:hidden'} lg:block`}>
-          <NavBarLinks />
+          <NavBarLinks handleMenu={toggleMenu}/>
         </div>
         <NavBarBtn />
         </div>
