@@ -26,8 +26,12 @@ const SingleProject = ({name, year, description, align, image, link}: Props) => 
 
         <p className={`text-white pt-2 sm:text-center ${align === "left" ? "md:text-right" : "md:text-left"}`}>{description}</p>
 
-        <a target="_blank" href={link} 
-        className={`pt-1.5 text-lg flex gap-2 items-center text-cyan hover:text-orange transition-all duration-500 cursor-pointer sm:justify-self-center ${align === 'left' ? "md:justify-self-end" : "md:justify-self-start"}`}>View <BiSolidRightTopArrowCircle />
+        <a 
+        target="_blank" 
+        href={link} 
+        rel="noopener noreferrer"
+        className={`pt-1.5 text-lg flex gap-2 items-center text-cyan hover:text-orange transition-all duration-500 cursor-pointer sm:justify-self-center ${align === 'left' ? "md:justify-self-end" : "md:justify-self-start"}`}>
+          View<BiSolidRightTopArrowCircle />
         </a>
 
       </div>
