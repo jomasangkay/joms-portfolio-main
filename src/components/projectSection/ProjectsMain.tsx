@@ -6,14 +6,16 @@ import { fadeIn } from "../../framerMotion/variants";
 const projects = [
     {
         name:'LetsType!',
-        year:"A fun little typing wizard game inspired by Typing Master, which I used to play back in grade school.",
+        year:"Aug2024",
+        description: "A fun little typing wizard game inspired by Typing Master, which I used to play back in grade school, created with HTML, CSS and JavaScript only. This is created while learning the basics of JavaScript.",
         align:'right',
         image:'images/website-img-1.png',
-        link:'projects/letstype/',
+        link:'projects/letstype/index.html',
     },
     {
         name:'TicTacToe Java',
         year:'On-going implementation',
+        description: "Stay tuned!",
         align:'left',
         image:'images/website-img-2.jpg',
         link:'#',
@@ -21,6 +23,7 @@ const projects = [
     {
         name:'Inventory Management System',
         year:'On-going implementation',
+        description: "Stay tuned!",
         align:'right',
         image:'images/website-img-3.jpg',
         link:'#',
@@ -45,6 +48,7 @@ const ProjectsMain = () => {
                 key={index} 
                 name={item.name} 
                 year={item.year} 
+                description={item.description}
                 align={item.align}      
                 image={item.image}
                 link={item.link}/>
