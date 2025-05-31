@@ -4,7 +4,7 @@ const FooterMain = () => {
   const footerLinks = [
     {
       name: "About Me",
-      section: "about",
+      section: "aboutme",
     },
     {
       name: "Skills",

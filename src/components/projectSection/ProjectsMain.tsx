@@ -5,11 +5,11 @@ import { fadeIn } from "../../framerMotion/variants";
 
 const projects = [
     {
-        name:'Typing Wizard',
+        name:'LetsType!',
         year:"A fun little typing wizard game inspired by Typing Master, which I used to play back in grade school.",
         align:'right',
         image:'images/website-img-1.png',
-        link:'projects/letstype/index.html',
+        link:'projects/letstype/',
     },
     {
         name:'TicTacToe Java',
