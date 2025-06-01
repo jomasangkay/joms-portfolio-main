@@ -7,7 +7,7 @@ const projects = [
     {
         name:'LetsType!',
         year:"Aug2024",
-        description: "A fun little typing wizard game inspired by Typing Master, which I used to play back in grade school, created with HTML, CSS and JavaScript only.",
+        description: "A fun little typing wizard game inspired by Typing Master, which I used to play back in grade school. Built with only HTML, CSS, and JavaScript as a way to challenge and sharpen my JavaScript skills",
         align:'right',
         image:'images/website-img-1.png',
         link:'letstype/typing-game.html',
@@ -54,6 +54,7 @@ const ProjectsMain = () => {
                 link={item.link}/>
             })}                                         
         </div>
+
     </div>
   )
 }

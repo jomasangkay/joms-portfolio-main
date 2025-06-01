@@ -1,11 +1,15 @@
-
+import { Link } from 'react-scroll';
 
 const AboutMeText = () => {
   return (
     <div className="flex flex-col md:items-start sm:items-center md:text-left sm:text-center">
         <h2 className="text-6xl text-cyan mb-10">About Me</h2>
-        <p className="text-white">Entry level developer with strong hands-on experience in application support, API integration, full stack development and automation scripting using Python, and Java. Skilled in building responsive web applications with React, JavaScript, HTML, CSS and Java Spring boot, and developing automated test scripts with Selenium, TestNG, and Maven. Proficient in using AWS services like CloudWatch, DynamoDB, and Athena for data extraction, monitoring, and automation tasks. Familiar with Agile Scrum methodologies, version control with Git, and collaborative development in CI/CD environments. Known for problem-solving, attention to detail, and the ability to quickly adapt to new technologies and development too</p>
-        <button className="border border-orange rounded-full py-2 px-4 text-lg flex items-center mt-10 hover:bg-orange transition-all duration-500 cursor-pointer md:self-start sm:self-center text-white hover:text-cyan">My Projects</button>
+        <p className="text-white">I began my journey as a developer last year (2024) by working on real-world problems in a professional setting. Since then, I've continued to build on that experience by working on software and web development projects in my free time, focusing on improving code quality, system design, and learning modern frameworks and tools. As I continue to grow, I've developed a strong passion for writing clean, efficient code, building scalable solutions, and solving complex problems through technology.</p>
+        <Link
+        smooth={true} 
+        duration={200}
+        offset={-200} 
+        to='projects' className="border border-orange rounded-full py-2 px-4 text-lg flex items-center mt-10 hover:bg-orange transition-all duration-500 cursor-pointer md:self-start sm:self-center text-white hover:text-cyan">My Projects</Link>
     </div>
     
   )
