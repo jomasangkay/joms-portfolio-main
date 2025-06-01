@@ -7,10 +7,10 @@ const projects = [
     {
         name:'LetsType!',
         year:"Aug2024",
-        description: "A fun little typing wizard game inspired by Typing Master, which I used to play back in grade school, created with HTML, CSS and JavaScript only. This is created while learning the basics of JavaScript.",
+        description: "A fun little typing wizard game inspired by Typing Master, which I used to play back in grade school, created with HTML, CSS and JavaScript only.",
         align:'right',
         image:'images/website-img-1.png',
-        link:'https://www.jomasangkay.com/projects/letstype/index.html',
+        link:'typing-game.html',
     },
     {
         name:'TicTacToe Java',
