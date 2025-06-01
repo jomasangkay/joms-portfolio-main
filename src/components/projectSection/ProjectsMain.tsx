@@ -10,7 +10,7 @@ const projects = [
         description: "A fun little typing wizard game inspired by Typing Master, which I used to play back in grade school, created with HTML, CSS and JavaScript only.",
         align:'right',
         image:'images/website-img-1.png',
-        link:'typing-game.html',
+        link:'letstype/typing-game.html',
     },
     {
         name:'TicTacToe Java',
