@@ -31,8 +31,8 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
-
 
 body {
   @apply bg-darkBrown
