@@ -31,7 +31,12 @@
 
 html {
   scroll-behavior: smooth;
+
+}
+
+#root {
   overflow-x: hidden;
+  position:relative;
 }
 
 body {
