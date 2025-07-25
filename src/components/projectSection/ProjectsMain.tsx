@@ -13,21 +13,21 @@ const projects = [
         link:'letstype/typing-game.html',
     },
     {
-        name:'Vivre Medical Group Website',
-        year:'Work In Progress',
-        description: "Stay tuned!",
-        align:'left',
-        image:'images/website-img-2.png',
-        link:'#',
-    },
-    {
-        name:'TicTacToe Java',
+        name:'AI Assistant Hub',
         year:'On-going Implementation',
-        description: "Stay tuned!",
-        align:'right',
+        description: "A full-stack application that provides AI-powered services including meal calorie analysis, text translation, and PDF document summarization.",
+        align:'left',
         image:'images/website-img-3.jpg',
         link:'#',
     },
+    {
+        name:'Vivre Medical Group Website',
+        year:'Work In Progress',
+        description: "Stay tuned!",
+        align:'right',
+        image:'images/website-img-2.png',
+        link:'#',
+    }
 ]
 
 const ProjectsMain = () => {
