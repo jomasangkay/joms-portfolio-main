@@ -17,7 +17,7 @@ const projects = [
         year:'On-going Implementation',
         description: "A full-stack application that provides AI-powered services including meal calorie analysis, text translation, and PDF document summarization.",
         align:'right',
-        image:'images/website-img-3.jpg',
+        image:'images/website-img-ai.jpg',
         link:'#',
     },
     {
