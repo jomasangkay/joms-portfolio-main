@@ -16,7 +16,7 @@ const projects = [
         name:'AI Assistant Hub',
         year:'On-going Implementation',
         description: "A full-stack application that provides AI-powered services including meal calorie analysis, text translation, and PDF document summarization.",
-        align:'left',
+        align:'right',
         image:'images/website-img-3.jpg',
         link:'#',
     },
@@ -27,7 +27,8 @@ const projects = [
         align:'right',
         image:'images/website-img-2.png',
         link:'#',
-    }
+    },
+    
 ]
 
 const ProjectsMain = () => {
